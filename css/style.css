@@ -1,0 +1,30 @@
+.body{
+    background-color: black;
+    height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    color: blanchedalmond;
+}
+.the_form{
+    color: blanchedalmond;
+}
+#regform{
+    display: none;
+}
+#signinform{}
+.the_form, span{margin: 10px;}
+.the_form, input{margin: 10px;}
+#login{}
+#password{}
+#email{
+    display: none;
+}
+#submit{}
+.regbutton{
+    text-decoration: none;
+    color: blanchedalmond;   
+}
+.regbutton:hover{
+    color: darkblue;
+}
