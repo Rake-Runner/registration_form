@@ -112,7 +112,6 @@ while($res[] = mysqli_fetch_assoc($query2)){
 
 for($ri = 0; $ri <= 10; $ri++){
     if ($res[$ri]['login'] == $rLogin || $res[$ri]['email'] == $rEmail){
-        $_SESSION['errorReg'] = 'Хуй тебе!';
         header('Location: /demo/index.php', true, 301);
         exit;        
     }
@@ -129,7 +128,6 @@ $sql = "INSERT INTO testdb (id, login, email, password, name, bdate, country)
 VALUES ('', '$rLogin', '$rEmail', '$rPass', '$rName', '$rBDay', '$cCountry')";
 
 if ($conn->query($sql) === TRUE) {
-    #echo "New record created successfully <br>";
     echo "Реристрация прошла успешно <br>";
     echo '<a href="/demo/index.php">Back</a>';
 } else {
